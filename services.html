@@ -1,0 +1,442 @@
+<!Doctype html>
+<head>
+    <div>
+    <nav class="navbar">
+
+    <img src="logo.png"alt="DevNest Logo"style="height:60px";>
+    <ul class="nav-links">
+<a href="index.html">Home</a>   
+<a href="about.html">About</a>   
+<a href="services.html">Courses</a>   
+<a href="contact.html">Contact</a>   
+<a href="login.html">Login</a>   
+<a href="register.html">Register</a> 
+</div>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DevNest-Services</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+    position: relative;
+    height: 300px;
+    background: url('https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1500&q=80') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+}
+
+.hero h1 {
+    position: relative;
+    color: rgb(8, 5, 37);
+    font-size: 45px;
+    letter-spacing: 1px;
+}
+
+/* ===== SERVICES SECTION ===== */
+.services {
+    padding: 60px 8%;
+    margin-top: -60px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.read-more {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.read-more span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background: #f1f1f1;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.card:hover .read-more span {
+    background: #02041a;
+    color: #fff;
+}
+
+.icon-box {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 120px;
+    height: 120px;
+    background: #fafafa;
+    border-radius: 50% 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-box i {
+    font-size: 40px;
+    color: #02041a;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+}
+</style>
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Courses</h1>
+</section>
+
+<!-- SERVICES -->
+<section class="services">
+    <div class="service-grid">
+
+        <!-- Card 1 -->
+        <div class="card">
+            <h3>HTML & CSS Fundamentals</h3>
+            <p>Build responsive and well-structured websites from scratch using modern layout techniques.</p>
+            <a href="#" class="read-more">
+                <span><i class="fa fa-arrow-right"></i></span>
+                Read more
+            </a>
+            <div class="icon-box">
+                <i class="fa fa-pencil-ruler"></i>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <h3>JavaScript Essentials</h3>
+            <p>Learn core programming concepts to create interactive and dynamic web applications.</p>
+            <a href="#" class="read-more">
+                <span><i class="fa fa-arrow-right"></i></span>
+                Read more
+            </a>
+            <div class="icon-box">
+                <i class="fa fa-code"></i>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <h3>Frontend Development</h3>
+            <p>Design and develop modern user interfaces with responsive and interactive features.</p>
+            <a href="#" class="read-more">
+                <span><i class="fa fa-arrow-right"></i></span>
+                Read more
+            </a>
+            <div class="icon-box">
+                <i class="fa fa-laptop-code"></i>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+            <h3>Backend Basics</h3>
+            <p>Understand server-side development, databases, and authentication systems.</p>
+            <a href="#" class="read-more">
+                <span><i class="fa fa-arrow-right"></i></span>
+                Read more
+            </a>
+            <div class="icon-box">
+                <i class="fa fa-pencil-ruler"></i>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card">
+            <h3>Full Stack Development</h3>
+            <p>Build complete web applications from frontend to backend with real-world projects.</p>
+            <a href="#" class="read-more">
+                <span><i class="fa fa-arrow-right"></i></span>
+                Read more
+            </a>
+            <div class="icon-box">
+                <i class="fa fa-code"></i>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card">
+            <h3>University Project Support</h3>
+            <p>Get guidance to develop structured, documented, and presentation-ready academic projects.</p>
+            <a href="#" class="read-more">
+                <span><i class="fa fa-arrow-right"></i></span>
+                Read more
+            </a>
+            <div class="icon-box">
+                <i class="fa fa-laptop-code"></i>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>
+ 
+</nav>
+
+<footer class="footer">
+        <div class="footer-container">
+            <div class="footer-box" style="text-align:center;">
+                <img src="DevNest.png"alt="DevNest Logo"style="height: 100px";>
+                
+                    <h3>About Us</h3>
+                <p>
+                    DevNest Student Developing Hub is a learning platform where students
+                    build real-world projects, improve coding skills, and grow together
+                    as future developers.
+                </p>
+            </div>
+
+            <div class="footer-box" style="text-align:center;">
+                <h3>Quick Links</h3>
+               <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
+    </ul>
+</nav>
+
+                
+            </div>
+
+            <div class="footer-box" style="text-align:left;">
+                <h3>Contact Us</h3>
+                <p>Email: devnest@gmail.com</p>
+                <p>Phone: +92 300 0000000</p>
+                <p>Pakistan</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">    
+              <div class="copyright">
+            <p>© 2026 DevNest Student Developing Hub. All Rights Reserved.</p>
+        </div>
+    </footer>
+<style>
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #0b1d2a;
+}
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .h1 {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+}
+
+   .navbar{
+    width:100%;
+    height:60px;                 
+    background: linear-gradient(90deg,#000000,#111111,#1d1c1c);  
+    display:flex;
+    align-items:center;
+    justify-content: space-evenly;
+    padding:0 30px;
+    gap: 40px;    
+}  
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 60px;   
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;   
+    padding: 6px 10px;
+    transition: 0.3s;
+    border-radius: 4px;
+}
+
+
+.nav-links a:hover{
+    background:white;
+    color:#121213;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.footer-box h3 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.footer-box p,
+.footer-box ul li {
+    font-size: 16px;
+}
+
+  footer {
+    background-color: #111010;
+    color: white;
+    padding: 50px 0 20px 0;
+}
+
+.footer-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-box {
+    width: 32%;
+}
+
+.footer-box h3 {
+    margin-bottom: 15px;
+}
+
+.footer-box ul {
+    
+    list-style: square;    
+    padding-left: 15px;     
+    margin: 0;
+}
+.footer-box ul {
+    list-style-position: inside;
+    padding-left: 0.5;
+}
+
+
+.footer-box ul li {
+    margin-bottom: 8px;
+}
+.footer-box p {
+    line-height: 1.6;
+}
+
+.footer-box ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-box ul li a:hover {
+    color: white;
+}
+
+.copyright {
+    text-align: center;
+    border-top: 0.5px solid gray;
+    width: 100%;
+    margin: 50;
+    padding-top: 15px;
+    padding-bottom: 0.5px;
+    font-size: 13px;
+}
+
+.footer-logo {
+    width: 120px;
+    display: center;
+    margin: 0 auto 15px auto;
+}
+
+
+
+</style>
+
+</body>
+</html>
+
+
